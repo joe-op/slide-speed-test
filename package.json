@@ -1,0 +1,26 @@
+{
+  "name": "Slider speed test",
+  "description": "Test speed of slide animation with a Purescript Halogen app",
+  "author": "Joe Opseth",
+  "license": "MIT-0",
+  "scripts": {
+    "postinstall": "npx spago install",
+    "build": "npx spago build -w",
+    "esbuild": "esbuild --bundle index.js",
+    "serve": "npm run esbuild -- --servedir=dist"
+  },
+  "dependencies": {
+    "purescript": "^0.15.0",
+    "spago": "^0.20.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
+    "esbuild": "^0.14.39"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joe-op/slide-speed-test.git"
+  }
+}
